@@ -1,0 +1,114 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+#header {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#navigation {
+	background-image: url(../images/header.JPG);
+	background-size: cover;
+	background-position: center;
+	border-bottom: .25rem solid white;
+}
+
+#picture1 {
+	background-image: url(../images/picture1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#picture2 {
+	background-image: url(../images/picture2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#picture3 {
+	background-image: url(../images/picture3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#picture4 {
+	background-image: url(../images/picture4.jpg);
+	background-size: cover;
+	background-position: center;
+}

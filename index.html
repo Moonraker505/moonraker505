@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Home · Rylan Redberger</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+	
+	#background {
+		background-color: black;
+	}
+	
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  
+	  .slideshow {
+  list-style-type: none;
+}
+
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after { 
+    top: -16px; /*Not sure why I needed this fix*/
+		position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: 0; 
+}
+
+.slideshow li span { 
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+
+
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("images/slideshow/1.jpg"); 
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("images/slideshow/2.jpg");
+    animation-delay: 5s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("images/slideshow/3.jpg");
+    animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url("images/slideshow/4.jpg");   
+    animation-delay: 15s; 
+}
+.slideshow li:nth-child(5) span { 
+    background-image: url("images/slideshow/5.jpg");
+    animation-delay: 20s; 
+}
+.slideshow li:nth-child(6) span { 
+    background-image: url("images/slideshow/6.jpg");
+	animation-delay: 25s; 
+}
+.slideshow li:nth-child(7) span { 
+    background-image: url("images/slideshow/7.jpg");
+    animation-delay: 30s; 
+}
+.slideshow li:nth-child(8) span { 
+    background-image: url("images/slideshow/8.jpg");
+    animation-delay: 35s; 
+}
+.slideshow li:nth-child(9) span { 
+    background-image: url("images/slideshow/9.jpg");   
+    animation-delay: 40s; 
+}
+
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+}
+
+		.fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+
+		/* Set a specific color for each brand */
+
+		.fa-google {
+		  background: #dd4b39;
+		  color: white;
+		}
+
+		.fa-linkedin {
+		  background: #007bb5;
+		  color: white;
+		}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white">
+  
+<ul class="slideshow" id="background">
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+</ul>
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>  
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="itas/index.html">ITAS Program</a>
+		<a class="nav-link" href="website/index.html">Personal Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+	<img src="images/icon.png" alt="A picture of me" width="50%" height="auto">
+	<br>
+	<br>
+	<br>
+    <h1>Rylan Redberger's Portfolio</h1>
+    <p class="lead">Your one stop shop for everything to do with me. Explore my journey through the ITAS program as well as some of my personal projects.</p>
+    <p class="lead">
+      <a href="itas/index.html" class="btn btn-lg btn-dark border-white">Continue Further...</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+  	  <!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Add font awesome icons -->
+		<a href="https://www.linkedin.com/in/rylan-redberger/" class="fa fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
+		<a href="mailto:rylan.redberger@gmail.com" class="fa fa-google"></a>
+		<br>
+		<br>
+    <p>Thanks for stopping by!</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>

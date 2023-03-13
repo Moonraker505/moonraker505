@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Creating the Website · Rylan Redberger</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+	<link rel="icon" type="image/x-icon" href="../images/icon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <link rel="stylesheet" href="grid-gallery.css">
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  
+		.fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+
+		/* Set a specific color for each brand */
+
+		.fa-google {
+		  background: #dd4b39;
+		  color: white;
+		}
+
+		.fa-linkedin {
+		  background: #007bb5;
+		  color: white;
+		}
+
+		#pictureheading {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		
+		/* Centered text */
+		.centered {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header id="navigation" class="site-header sticky-top py-1">
+  <div class="container">
+    <header class="mb-auto p-3">
+    <div>  
+      <nav class="nav nav-masthead justify-content-center">
+	    <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link active" href="#">ITAS Program</a>
+		<a class="nav-link" href="../website/index.html">Personal Projects</a>
+      </nav>
+    </div>
+  </header>
+  </div>
+</header>
+
+<main>
+<div style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(background1.jpg); background-size: cover; background-position: top left; background-repeat: no-repeat; background-attachment: fixed;">
+<section class="gallery-block grid-gallery">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="fw-light text-light">The ITAS Program</h1>
+					<p class="lead text-light">Below are some of the courses in the ITAS program and my completed projects.</p>
+                </div>
+                <div class="row">
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="https://youtu.be/PzzL7P6POvw" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Powershell Scripting</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/powershell.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="https://youtu.be/-QaLwpJq_hs" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Creating an Active Directory Network</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/ad.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="https://youtu.be/WGEKfxjjF-U" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">VPN and File Services with DFS</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/vpn.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="ITAS267_PROJ1_Rylan.Redberger.pdf" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Replication with VMware Site Recovery Manager</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/vmware.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="ITAS166_Project2_Rylan.Redberger.pdf" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Hyper-V Failover and Replication</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/hyperv.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="https://youtu.be/8fazwkn5MTA" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Shell Scripting</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/terminal.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="https://youtu.be/Ygd7BP7ZfyQ" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Linux Email Services</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/email.jpg">
+                        </a>
+                    </div>
+					<div class="col-md-6 col-lg-6 item">
+                        <a class="lightbox" href="https://youtu.be/jAEhddWEYxU" target="_blank" rel="noopener noreferrer">
+						<div class="centered"><p class="lead text-light">Linux Web Services</p></div>
+                            <img class="img-fluid image scale-on-hover" src="images/web.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run('.grid-gallery', { animation: 'slideIn'});
+        </script>
+</div>
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img src="../images/icon.png" alt="A picture of me" width="70" height="70">
+	  <br>
+	  <br>
+	  <h5>Thanks for reading!</h5>
+	  <br>
+	  <!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Add font awesome icons -->
+		<a href="https://www.linkedin.com/in/rylan-redberger/" class="fa fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
+		<a href="mailto:rylan.redberger@gmail.com" class="fa fa-google"></a>
+	  <br>
+	  <br>
+	  <br>
+    </div>
+    <div class="col-6 col-md">
+      <h5>ITAS Program</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary disabled" href="https://youtu.be/PzzL7P6POvw">Powershell Scripting</a></li>
+        <li><a class="link-secondary disabled" href="https://youtu.be/-QaLwpJq_hs">Creating an Active Directory Network</a></li>
+        <li><a class="link-secondary disabled" href="https://youtu.be/WGEKfxjjF-U">VPN and File Services with DFS</a></li>
+        <li><a class="link-secondary disabled" href="ITAS267_PROJ1_Rylan.Redberger.pdf">Replication with Site Recovery Manager</a></li>
+        <li><a class="link-secondary disabled" href="ITAS166_Project2_Rylan.Redberger.pdf">Hyper-V Failover and Replication</a></li>
+        <li><a class="link-secondary disabled" href="https://youtu.be/8fazwkn5MTA">Shell Scripting</a></li>
+		<li><a class="link-secondary disabled" href="https://youtu.be/Ygd7BP7ZfyQ">Linux Email Services</a></li>
+		<li><a class="link-secondary disabled" href="https://youtu.be/jAEhddWEYxU">Linux Web Services</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Personal Projects</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Home Lab</a></li>
+        <li><a class="link-secondary" href="#">Game Server</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      
+  </body>
+</html>
